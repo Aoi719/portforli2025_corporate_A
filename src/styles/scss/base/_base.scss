@@ -1,0 +1,22 @@
+@use "functions" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+body {
+  font-family: "Noto Sans JP", serif;
+  * {
+    font-size: fz(16);
+  }
+}
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+input,
+button,
+textarea,
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}

@@ -1,0 +1,16 @@
+@for $i from 1 through 10 {
+  $num: $i * 5;
+
+  .mt-#{$num} {
+    margin-top: #{$num}px !important;
+  }
+  .mb-#{$num} {
+    margin-bottom: #{$num}px !important;
+  }
+  .ml-#{$num} {
+    margin-left: #{$num}px !important;
+  }
+  .mr-#{$num} {
+    margin-right: #{$num}px !important;
+  }
+}

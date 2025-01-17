@@ -1,6 +1,13 @@
-h1 {
-  color: #f00;
-  span {
-    background-color: #fff;
-  }
-}
+// base
+@use "base/reset";
+@use "base/base";
+
+// layout
+
+// components
+@use "components/text";
+
+// utilities
+@use "utilities/display";
+@use "utilities/margins";
+@use "utilities/paddings";

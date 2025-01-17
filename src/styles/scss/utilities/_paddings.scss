@@ -1,0 +1,16 @@
+@for $i from 1 through 10 {
+  $num: $i * 5;
+
+  .pt-#{$num} {
+    padding-top: #{$num}px !important;
+  }
+  .pb-#{$num} {
+    padding-bottom: #{$num}px !important;
+  }
+  .pl-#{$num} {
+    padding-left: #{$num}px !important;
+  }
+  .pr-#{$num} {
+    padding-right: #{$num}px !important;
+  }
+}
