@@ -1,6 +1,8 @@
 @use "../settings/functions" as *;
 
-.lead-text {
-  font-size: fz(48);
+.primary-heading {
   text-align: center;
+  &__text {
+    font-size: fz(64);
+  }
 }

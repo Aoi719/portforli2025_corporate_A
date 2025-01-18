@@ -1,0 +1,15 @@
+@use "../settings/functions" as *;
+
+.mv {
+  position: relative;
+  margin-bottom: 100px;
+  &__copy {
+    font-size: fz(48);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: rgba($color: #fff, $alpha: 0.7);
+    padding: 20px;
+    margin: 20px;
+  }
+}

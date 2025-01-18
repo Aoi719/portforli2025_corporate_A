@@ -3,10 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>コーポレートサイトA</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="コーポレートサイトAのWEBサイトです。（ポートフォリオ用）" />
+    <meta name="format-detection" content="telephone=no,email=no,address=no" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="コーポレートサイトA" />
+    <meta property="og:description" content="コーポレートサイトAのWEBサイトです。（ポートフォリオ用）" />
+    <meta property="og:url" content="{{ ページURL }}" />
+    <meta property="og:image" content="{{ 絶対パス }}/img/ogp.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@{{ twitter id }}" />
+    <meta name="twitter:creator" content="@{{ twitter id }}" />
+    <!-- アイコン関係 -->
+    <link rel="icon" type="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="{size}" href="/img/common/apple-touch-icon.png" />
+    <link rel="canonical" href="{{ url }}" />
+    <!-- リソース -->
+    <link rel="stylesheet" href="/assets/css/splide.min.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <h1>更新したぞい</h1>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="/"><img src="https://placehold.jp/226x52.png" alt="○○株式会社" /></a>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a href="#">大カテゴリ1</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#">大カテゴリ2</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#">大カテゴリ3</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="mv">
+        <div class="mv__inner">
+          <div class="splide" aria-label="Splideの基本的なHTML">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="/assets/images/mv_img01_pc.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/assets/images/mv_img02_pc.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/assets/images/mv_img03_pc.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/assets/images/mv_img04_pc.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/assets/images/mv_img05_pc.jpg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div class="splide__progress">
+              <div class="splide__progress__bar"></div>
+            </div>
+            <button class="splide__toggle" type="button">
+              <span class="splide__toggle__play">
+                <img src="/assets/images/icons/button_play.svg" alt="" />
+              </span>
+              <span class="splide__toggle__pause">
+                <img src="/assets/images/icons/button_stop.svg" alt="" />
+              </span>
+            </button>
+          </div>
+          <p class="mv__copy">キャッチコピーキャッチコピー<br />キャッチコピーキャッチコピーキャッチコピー</p>
+        </div>
+      </section>
+      <div class="section">
+        <div class="section__inner">
+          <p class="lead-text mb-40">
+            リードテキストリードテキストリードテキストリードテキストリードテキストリードテキストリードテキストリードテキストリードテキストリードテキストリードテキスト
+          </p>
+          <div class="img-box">
+            <img src="https://placehold.jp/1200x468.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <section class="section">
+        <div class="section__inner">
+          <h2 class="primary-heading">
+            <span class="primary-heading__text">大カテゴリ</span>
+          </h2>
+          <div class="article-col">
+            <div class="article-col__item">
+              <div class="article-col__img">
+                <img src="" alt="" />
+              </div>
+              <div class="article-col__contents">
+                <h3 class="article-col__heading">見出し</h3>
+                <p class="article-col__text">テキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__inner">
+          <h2 class="primary-heading">
+            <span class="primary-heading__text">アクセス</span>
+          </h2>
+          <div class="table-wrap">
+            <table>
+              <colgroup>
+                <col class="w-30" />
+                <col class="w-70" />
+              </colgroup>
+              <tr>
+                <th>社名</th>
+                <td>○○株式会社</td>
+              </tr>
+              <tr>
+                <th>住所</th>
+                <td>北海道札幌市中央区○○条○丁目</td>
+              </tr>
+              <tr>
+                <th>電話番号</th>
+                <td>011-000-0000</td>
+              </tr>
+              <tr>
+                <th>Eメール</th>
+                <td>aaaaa@example.com</td>
+              </tr>
+            </table>
+            <div class="map-box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.7055236229776!2d141.34599169678958!3d43.0686606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2974d2c3f903%3A0xa5e2b18cdd4a47a5!2z5pyt5bmM6aeF!5e0!3m2!1sja!2sjp!4v1737203227380!5m2!1sja!2sjp"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/splide.min.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

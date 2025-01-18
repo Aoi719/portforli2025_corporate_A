@@ -1,0 +1,36 @@
+// 変数
+$w-sp: 390px;
+$w-tab: 768px;
+$w-ms: 900px;
+$w-m: 1000px;
+$w-lg: 1200px;
+$w-full: 100%;
+
+// 規定
+.w-sp {
+  width: $w-sp;
+}
+.w-tab {
+  width: $w-tab;
+}
+.w-ms {
+  width: $w-ms;
+}
+.w-m {
+  width: $w-m;
+}
+.w-lg {
+  width: $w-lg;
+}
+.w-full {
+  width: $w-full;
+}
+
+// table用
+@for $i from 1 through 10 {
+  $num: $i * 5;
+
+  .w-#{$num} {
+    width: #{$num} + "%";
+  }
+}

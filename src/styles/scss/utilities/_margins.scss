@@ -1,3 +1,113 @@
+// 変数
+$sm: 8px;
+$m: 16px;
+$lg: 24px;
+$xl: 48px;
+$xxl: 64px;
+$xxxl: 180px;
+
+// 規定
+// margin（四方）
+.m-sm {
+  margin: $sm;
+}
+.m-m {
+  margin: $m;
+}
+.m-lg {
+  margin: $lg;
+}
+.m-xl {
+  margin: $xl;
+}
+.m-xxl {
+  margin: $xxl;
+}
+.m-xxxl {
+  margin: $xxxl;
+}
+
+// margin-top
+.mt-sm {
+  margin-top: $sm;
+}
+.mt-m {
+  margin-top: $m;
+}
+.mt-lg {
+  margin-top: $lg;
+}
+.mt-xl {
+  margin-top: $xl;
+}
+.mt-xxl {
+  margin-top: $xxl;
+}
+.mt-xxxl {
+  margin-top: $xxxl;
+}
+
+// margin-bottom
+.mb-sm {
+  margin-bottom: $sm;
+}
+.mb-m {
+  margin-bottom: $m;
+}
+.mb-lg {
+  margin-bottom: $lg;
+}
+.mb-xl {
+  margin-bottom: $xl;
+}
+.mb-xxl {
+  margin-bottom: $xxl;
+}
+.mb-xxxl {
+  margin-bottom: $xxxl;
+}
+
+// margin-right
+.mr-sm {
+  margin-right: $sm;
+}
+.mr-m {
+  margin-right: $m;
+}
+.mr-lg {
+  margin-right: $lg;
+}
+.mr-xl {
+  margin-right: $xl;
+}
+.mr-xxl {
+  margin-right: $xxl;
+}
+.mr-xxxl {
+  margin-right: $xxxl;
+}
+
+// margin-left
+.ml-sm {
+  margin-left: $sm;
+}
+.ml-m {
+  margin-left: $m;
+}
+.ml-lg {
+  margin-left: $lg;
+}
+.ml-xl {
+  margin-left: $xl;
+}
+.ml-xxl {
+  margin-left: $xxl;
+}
+.ml-xxxl {
+  margin-left: $xxxl;
+}
+
+// 5刻み
 @for $i from 1 through 10 {
   $num: $i * 5;
 

@@ -2,12 +2,20 @@
 @use "base/reset";
 @use "base/base";
 
-// layout
+//settings
 
-// components
-@use "components/text";
+// layout
+@use "layout/header";
 
 // utilities
 @use "utilities/display";
 @use "utilities/margins";
 @use "utilities/paddings";
+@use "utilities/width";
+
+// components
+@use "components/text";
+@use "components/mv";
+@use "components/section";
+@use "components/splide";
+@use "components/headings";

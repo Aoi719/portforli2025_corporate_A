@@ -1,0 +1,26 @@
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+  }
+  &__logo {
+    a {
+      transition: opacity 0.3s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__nav {
+  }
+  &__nav-list {
+    display: flex;
+  }
+  &__nav-list-item {
+    & + & {
+      margin-left: 24px;
+    }
+  }
+}
