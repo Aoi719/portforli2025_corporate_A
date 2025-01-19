@@ -5,7 +5,9 @@
 //settings
 
 // layout
+@use "layout/layouts";
 @use "layout/header";
+@use "layout/footer";
 
 // utilities
 @use "utilities/display";
@@ -19,3 +21,6 @@
 @use "components/section";
 @use "components/splide";
 @use "components/headings";
+@use "components/box";
+@use "components/table";
+@use "components/link";

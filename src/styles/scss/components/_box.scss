@@ -1,0 +1,41 @@
+@use "../settings/functions" as *;
+
+.article-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  &__item {
+  }
+  &__img {
+    max-width: 380px;
+    img {
+      aspect-ratio: 380 / 250;
+      object-fit: cover;
+    }
+  }
+  &__contents {
+  }
+  &__heading {
+    margin: 30px 0;
+    font-size: fz(32);
+  }
+  &__text {
+    font-size: fz(24);
+  }
+  &__button-wrapper {
+  }
+  &__button {
+    width: 180px;
+    border: 1px solid #000;
+    margin: 22px auto 0;
+    padding: 14px;
+    display: block;
+    text-align: center;
+  }
+}
+.map-box {
+  > iframe {
+    width: 100%;
+    min-height: 400px;
+  }
+}

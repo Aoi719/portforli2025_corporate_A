@@ -108,6 +108,10 @@ select {
   appearance: none;
 }
 
+.page-body-wrapper {
+  position: relative;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -125,6 +129,14 @@ select {
 }
 .header__nav-list-item + .header__nav-list-item {
   margin-left: 24px;
+}
+
+.footer__inner {
+  background-color: #d9d9d9;
+  padding: 30px;
+}
+.footer__copy {
+  text-align: center;
 }
 
 .sr-only {
@@ -699,6 +711,9 @@ select {
 .section + .section {
   margin-top: 100px;
 }
+.section:last-child {
+  padding-bottom: 170px;
+}
 
 .splide__slide img {
   object-fit: cover;
@@ -723,7 +738,97 @@ select {
 
 .primary-heading {
   text-align: center;
+  margin-bottom: 60px;
 }
 .primary-heading__text {
   font-size: 4rem;
+}
+
+.article-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.article-col__img {
+  max-width: 380px;
+}
+.article-col__img img {
+  aspect-ratio: 380/250;
+  object-fit: cover;
+}
+.article-col__heading {
+  margin: 30px 0;
+  font-size: 2rem;
+}
+.article-col__text {
+  font-size: 1.5rem;
+}
+.article-col__button {
+  width: 180px;
+  border: 1px solid #000;
+  margin: 22px auto 0;
+  padding: 14px;
+  display: block;
+  text-align: center;
+}
+
+.map-box > iframe {
+  width: 100%;
+  min-height: 400px;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+}
+.table th {
+  border: 1px solid #000;
+  padding: 24px;
+  background-color: #d9d9d9;
+}
+.table td {
+  border: 1px solid #000;
+  padding: 24px;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.to-top.is-show {
+  opacity: 1;
+}
+.to-top.is-fixed {
+  position: absolute;
+}
+.to-top__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  background-color: #fff;
+  width: 120px;
+  height: 120px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.to-top__text {
+  padding-top: 20px;
+  position: relative;
+  font-size: 1.5rem;
+  color: #000;
+}
+.to-top__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border: 2px solid;
+  border-color: #565656 #565656 transparent transparent;
+  transform: translate(-50%, 0) rotate(-45deg);
 }
