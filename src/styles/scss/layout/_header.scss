@@ -1,11 +1,22 @@
+@use "../mixins/breakpoints" as *;
+
 .header {
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 24px;
+    position: relative;
+    @include mq() {
+      padding: 16px;
+      align-items: center;
+    }
   }
   &__logo {
+    flex-shrink: 0;
+    @include mq() {
+      width: 150px;
+    }
     a {
       transition: opacity 0.3s;
       &:hover {
@@ -13,14 +24,82 @@
       }
     }
   }
+  &__hamburger {
+    @include mqup() {
+      display: none;
+    }
+    &-button {
+      width: 32px;
+      height: 32px;
+      vertical-align: bottom;
+      border: none;
+      background-color: #fff;
+    }
+    &-bar-wrap {
+      width: 100%;
+      display: block;
+      height: 24px;
+      position: relative;
+    }
+    &-bar {
+      width: 100%;
+      border: 1px solid #000;
+      display: block;
+      position: absolute;
+      transition:
+        opacity 0.3s,
+        transform 0.3s;
+      &:nth-child(1) {
+        top: 0;
+        .is-open & {
+          transform: rotate(45deg) translate(8px, 8px);
+        }
+      }
+      &:nth-child(2) {
+        top: 50%;
+        transform: translate(0, -50%);
+        .is-open & {
+          opacity: 0;
+        }
+      }
+      &:nth-child(3) {
+        bottom: 0;
+        .is-open & {
+          transform: rotate(-45deg) translate(8px, -8px);
+        }
+      }
+    }
+  }
   &__nav {
+    display: block;
+    @include mq() {
+      display: none;
+      position: absolute;
+      top: 66px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 99;
+      background: #ffff;
+      border-top: 1px solid #000;
+    }
+  }
+  &__nav-inner {
+    padding: 16px;
   }
   &__nav-list {
     display: flex;
+    @include mq() {
+      flex-direction: column;
+    }
   }
   &__nav-list-item {
     & + & {
       margin-left: 24px;
+      @include mq() {
+        margin-left: 0;
+        margin-top: 16px;
+      }
     }
   }
 }

@@ -1,8 +1,24 @@
+@use "../mixins/breakpoints" as *;
+
 .splide {
+  @include mq() {
+    min-height: 500px;
+  }
   &__slide {
     img {
       object-fit: cover;
+      @include mq() {
+        height: 100%;
+      }
     }
+  }
+  &__track,
+  &__slide {
+    @include mq() {
+      min-height: 500px;
+    }
+  }
+  &__slide {
   }
   &__progress__bar {
     background-color: lightblue;

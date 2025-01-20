@@ -11,6 +11,34 @@ $(function () {
     return false;
   });
 
+  // SPハンバーガーメニュー
+  let spBp = 576;
+  let headerNav = $(".header__nav");
+  let hMenuBtn = $(".header__hamburger-button");
+  let isMenuOpen = false;
+  hMenuBtn.on("click", function () {
+    const $this = $(this);
+    isMenuOpen = !isMenuOpen;
+    $this.toggleClass("is-open");
+    $this.closest(".header__hamburger").siblings(".header__nav").slideToggle();
+    if ($this.attr("aria-expanded") === "false") {
+      $this.attr("aria-expanded", "true");
+    } else {
+      $this.attr("aria-expanded", "false");
+    }
+  });
+  $(window).on("resize", function () {
+    if ($(window).width() >= spBp) {
+      headerNav.show();
+    } else {
+      if (isMenuOpen) {
+        headerNav.show();
+      } else {
+        headerNav.hide();
+      }
+    }
+  });
+
   // MVスライダー
   new Splide(".splide", {
     type: "loop",

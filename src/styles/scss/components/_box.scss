@@ -1,13 +1,20 @@
+@use "../settings/variables" as *;
 @use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
 
 .article-col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  @include mq() {
+    grid-template-columns: 1fr;
+  }
   &__item {
   }
   &__img {
-    max-width: 380px;
+    @include mqup() {
+      max-width: 380px;
+    }
     img {
       aspect-ratio: 380 / 250;
       object-fit: cover;
@@ -18,19 +25,37 @@
   &__heading {
     margin: 30px 0;
     font-size: fz(32);
+    @include mq() {
+      margin: 18px 0;
+      font-size: fz(20);
+    }
   }
   &__text {
     font-size: fz(24);
+    @include mq() {
+      font-size: fz(16);
+    }
   }
   &__button-wrapper {
   }
   &__button {
     width: 180px;
-    border: 1px solid #000;
     margin: 22px auto 0;
     padding: 14px;
     display: block;
     text-align: center;
+    border: 2px solid $accent-color;
+    background-color: $accent-color;
+    color: $text-color-white;
+    text-decoration: none;
+    font-weight: bold;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+    &:hover {
+      background-color: $text-color-white;
+      color: $accent-color;
+    }
   }
 }
 .map-box {

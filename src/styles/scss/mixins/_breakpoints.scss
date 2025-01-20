@@ -1,21 +1,18 @@
-$pc: 992px;
-$tab: 768px;
-$sp: 576px;
+$breakpoints: (
+  "sm": "576px",
+  "md": "768px",
+  "lg": "992px",
+  "xl": "1200px",
+) !default;
 
-@mixin pc {
-  @media screen and (max-width: ($pc)) {
+@mixin mq($breakpoint: md) {
+  @media screen and (max-width:#{map-get($breakpoints, $breakpoint)}) {
     @content;
   }
 }
 
-@mixin tab {
-  @media screen and (max-width: ($tab)) {
-    @content;
-  }
-}
-
-@mixin sp {
-  @media screen and (max-width: ($sp)) {
+@mixin mqup($breakpoint: md) {
+  @media screen and (min-width:#{map-get($breakpoints, $breakpoint)}) {
     @content;
   }
 }

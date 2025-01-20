@@ -1,15 +1,24 @@
+@use "../settings/variables" as *;
 @use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
 
 .mv {
   position: relative;
   margin-bottom: 100px;
+  @include mq() {
+    min-height: 500px;
+  }
   &__copy {
     font-size: fz(48);
+    color: $main-color-01;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    background-color: rgba($color: #fff, $alpha: 0.7);
+    background-color: rgba($color: #fff, $alpha: 0.8);
     padding: 20px;
     margin: 20px;
+    @include mq() {
+      font-size: fz(24);
+    }
   }
 }

@@ -29,18 +29,30 @@
         <h1 class="header__logo">
           <a href="/"><img src="https://placehold.jp/226x52.png" alt="○○株式会社" /></a>
         </h1>
+        <div class="header__hamburger">
+          <button class="header__hamburger-button" aria-expanded="false">
+            <span class="header__hamburger-bar-wrap">
+              <span class="header__hamburger-bar"></span>
+              <span class="header__hamburger-bar"></span>
+              <span class="header__hamburger-bar"></span>
+              <span class="sr-only">メニュー開閉</span>
+            </span>
+          </button>
+        </div>
         <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-list-item">
-              <a href="#">大カテゴリ1</a>
-            </li>
-            <li class="header__nav-list-item">
-              <a href="#">大カテゴリ2</a>
-            </li>
-            <li class="header__nav-list-item">
-              <a href="#">大カテゴリ3</a>
-            </li>
-          </ul>
+          <div class="header__nav-inner">
+            <ul class="header__nav-list">
+              <li class="header__nav-list-item">
+                <a href="#">大カテゴリ1</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="#">大カテゴリ2</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="#">大カテゴリ3</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -93,7 +105,7 @@
             </div>
           </div>
         </div>
-        <section class="section">
+        <section class="section bg-color">
           <div class="section__inner">
             <h2 class="primary-heading">
               <span class="primary-heading__text">大カテゴリ</span>
