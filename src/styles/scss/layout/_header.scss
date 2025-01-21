@@ -109,6 +109,7 @@
       color: $main-color-01;
       font-weight: bold;
       font-size: fz(18);
+      font-size: clamp(fz(14), 1.82vw, fz(18));
       position: relative;
       padding-bottom: 8px;
       &::before {

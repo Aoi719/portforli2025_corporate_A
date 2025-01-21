@@ -6,6 +6,7 @@
   position: relative;
   margin-bottom: 100px;
   @include mq() {
+    margin-bottom: 60px;
     min-height: 500px;
   }
   &__copy {
@@ -24,5 +25,37 @@
     @include mq() {
       font-size: fz(24);
     }
+  }
+}
+.category-mv {
+  margin-bottom: 100px;
+  border-top: 1px solid $main-color-01;
+  border-bottom: 1px solid $main-color-01;
+  @include mq() {
+    margin-bottom: 60px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include mq() {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq() {
+      padding: 24px 20px;
+    }
+  }
+  &__title-text {
+    font-size: fz(64);
+    color: $main-color-01;
+    @include mq() {
+      font-size: fz(32);
+    }
+  }
+  &__img {
   }
 }
