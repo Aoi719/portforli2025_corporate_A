@@ -1,10 +1,13 @@
+@use "../settings/variables" as *;
 @use "../settings/functions" as *;
 @use "../mixins/breakpoints" as *;
 
 .lead-text {
   font-size: fz(32);
   text-align: center;
+  color: $main-color-01;
+  font-weight: bold;
   @include mq() {
-    font-size: fz(24);
+    font-size: fz(18);
   }
 }

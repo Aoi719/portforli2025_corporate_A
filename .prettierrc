@@ -4,5 +4,5 @@
   "tabWidth": 2,
   "useTabs": false,
   "insertFinalNewline": true,
-  "printWidth": 120
+  "printWidth": 250
 }

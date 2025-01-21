@@ -1,5 +1,6 @@
 @use "../settings/variables" as *;
 @use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 
@@ -10,8 +11,10 @@
 body {
   font-family: "Noto Sans JP", serif;
   color: $text-color;
-  * {
-    font-size: fz(16);
+  font-size: fz(16);
+  line-height: 1.7;
+  @include mq() {
+    font-size: fz(14);
   }
 }
 img {

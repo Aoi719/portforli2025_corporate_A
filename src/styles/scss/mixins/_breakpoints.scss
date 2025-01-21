@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "sass:string";
+
 $breakpoints: (
   "sm": "576px",
   "md": "768px",
@@ -6,13 +9,13 @@ $breakpoints: (
 ) !default;
 
 @mixin mq($breakpoint: md) {
-  @media screen and (max-width:#{map-get($breakpoints, $breakpoint)}) {
+  @media screen and (max-width:#{map.get($breakpoints, $breakpoint)}) {
     @content;
   }
 }
 
 @mixin mqup($breakpoint: md) {
-  @media screen and (min-width:#{map-get($breakpoints, $breakpoint)}) {
+  @media screen and (min-width:#{map.get($breakpoints, $breakpoint)}) {
     @content;
   }
 }

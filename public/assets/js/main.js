@@ -39,6 +39,9 @@ $(function () {
     }
   });
 
+  // matchHeight
+  $(".mh").matchHeight();
+
   // MVスライダー
   new Splide(".splide", {
     type: "loop",
@@ -57,7 +60,7 @@ $(function () {
       $("#to-top").removeClass("is-show");
     }
     let scrollHeight = $(document).height();
-    let scrollPosition = $(window).height() + $(window).scrollTop();
+    let scrollPosition = window.innerHeight + $(window).scrollTop();
     let footHeight = $(".footer").innerHeight();
     if (scrollHeight - scrollPosition <= footHeight) {
       $("#to-top").addClass("is-fixed");

@@ -9,14 +9,18 @@
     min-height: 500px;
   }
   &__copy {
-    font-size: fz(48);
+    line-height: 1.5;
+    max-width: fit-content;
+    font-size: fz(60);
+    font-size: clamp(fz(24), 3.125vw, fz(60));
+    font-weight: bold;
     color: $main-color-01;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     background-color: rgba($color: #fff, $alpha: 0.8);
     padding: 20px;
-    margin: 20px;
+    margin: 0 20px 20px;
     @include mq() {
       font-size: fz(24);
     }

@@ -1,10 +1,12 @@
+@use "../settings/variables" as *;
 @use "../settings/functions" as *;
 @use "../mixins/breakpoints" as *;
 
 .footer {
   &__inner {
-    background-color: #d9d9d9;
+    background-color: $main-color-01;
     padding: 30px;
+    color: $text-color-white;
     @include mq() {
       padding: 16px;
     }

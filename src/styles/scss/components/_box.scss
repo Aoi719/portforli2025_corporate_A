@@ -23,18 +23,15 @@
   &__contents {
   }
   &__heading {
-    margin: 30px 0;
-    font-size: fz(32);
+    margin: 16px 0;
+    font-size: fz(28);
+    color: $main-color-01;
+    line-height: 1.2;
     @include mq() {
-      margin: 18px 0;
       font-size: fz(20);
     }
   }
   &__text {
-    font-size: fz(24);
-    @include mq() {
-      font-size: fz(16);
-    }
   }
   &__button-wrapper {
   }
