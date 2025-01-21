@@ -1174,6 +1174,7 @@ select {
   bottom: 20px;
   right: 20px;
   opacity: 0;
+  z-index: 10;
   transition: opacity 0.5s;
 }
 .to-top.is-show {
