@@ -1,0 +1,35 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.symbol-list {
+  &__item {
+    display: flex;
+  }
+  &__symbol {
+    flex-shrink: 0;
+  }
+  &__text {
+    margin-left: 0.5em;
+  }
+  &--caution {
+    font-size: fz(14);
+  }
+}
+.disc-list {
+  &__item {
+    position: relative;
+    padding-left: 1em;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1em;
+      left: 0;
+      width: 0.3em;
+      height: 0.3em;
+      border-radius: 50%;
+      background: $main-color-01;
+      margin-top: -4px;
+    }
+  }
+}

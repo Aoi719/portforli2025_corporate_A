@@ -2,6 +2,9 @@
 @use "../settings/functions" as *;
 @use "../mixins/breakpoints" as *;
 
+.img-box {
+  text-align: center;
+}
 .article-col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -158,6 +161,84 @@
       @include mq() {
         align-self: flex-start;
       }
+    }
+  }
+}
+.article-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  @include mq() {
+    flex-direction: column;
+  }
+  &--reverse {
+    flex-direction: row-reverse;
+    @include mq() {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    padding-right: 24px;
+    .article-box--reverse & {
+      padding-right: 0;
+      padding-left: 24px;
+    }
+  }
+  &__heading {
+    text-align: center;
+    font-size: fz(24);
+    margin-bottom: 40px;
+    @include mq() {
+      font-size: fz(18);
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    @include mq() {
+      margin-bottom: 24px;
+    }
+  }
+  &__img {
+    flex: 0 0 auto;
+  }
+  & + & {
+    border-top: 2px solid rgba($color: $main-color-02, $alpha: 0.5);
+  }
+  &:first-of-type {
+    border-top: 2px solid rgba($color: $main-color-02, $alpha: 0.5);
+  }
+  &:last-of-type {
+    border-bottom: 2px solid rgba($color: $main-color-02, $alpha: 0.5);
+  }
+}
+.cta-box {
+  background-color: $base-color-02;
+  padding: 40px;
+  &__text {
+    text-align: center;
+  }
+  &__button-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    width: 474px;
+    margin: 22px auto 0;
+    padding: 14px;
+    display: block;
+    text-align: center;
+    border: 2px solid $main-color-02;
+    background-color: $main-color-02;
+    color: $text-color-white;
+    text-decoration: none;
+    font-weight: bold;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+    &:hover {
+      background-color: $text-color-white;
+      color: $main-color-02;
     }
   }
 }

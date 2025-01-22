@@ -902,6 +902,9 @@ select {
   margin-inline: auto;
   padding: 0 20px;
 }
+.section--narrow .section__inner {
+  max-width: 1000px;
+}
 .section + .section {
   margin-top: 100px;
 }
@@ -979,6 +982,102 @@ select {
   .primary-heading__text {
     font-size: 1.5rem;
   }
+}
+
+.secondary-heading {
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .secondary-heading {
+    margin-bottom: 24px;
+  }
+}
+.secondary-heading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 2px;
+  margin-top: 2px;
+  background: #3a539b;
+}
+@media screen and (max-width: 768px) {
+  .secondary-heading::before {
+    width: 280px;
+  }
+}
+.secondary-heading__text {
+  font-size: 2rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  padding: 0 32px;
+}
+@media screen and (max-width: 768px) {
+  .secondary-heading__text {
+    font-size: 1.5rem;
+    padding: 0 16px;
+  }
+}
+
+.tertiary-heading {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+.tertiary-heading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 4px;
+  height: calc(100% - 16px);
+  margin-top: 2px;
+  background: #3a539b;
+}
+@media screen and (max-width: 768px) {
+  .tertiary-heading::before {
+    width: 3px;
+    height: calc(100% - 8px);
+  }
+}
+.tertiary-heading__text {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .tertiary-heading__text {
+    font-size: 1.125rem;
+  }
+}
+
+.service-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 64px;
+  color: #34495e;
+}
+@media screen and (max-width: 768px) {
+  .service-heading {
+    font-size: 2rem;
+    margin-bottom: 32px;
+  }
+}
+.service-heading:first-of-type {
+  margin-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .service-heading:first-of-type {
+    margin-top: 64px;
+  }
+}
+
+.img-box {
+  text-align: center;
 }
 
 .article-col {
@@ -1145,6 +1244,90 @@ select {
   }
 }
 
+.article-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+@media screen and (max-width: 768px) {
+  .article-box {
+    flex-direction: column;
+  }
+}
+.article-box--reverse {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px) {
+  .article-box--reverse {
+    flex-direction: column;
+  }
+}
+.article-box__content {
+  padding-right: 24px;
+}
+.article-box--reverse .article-box__content {
+  padding-right: 0;
+  padding-left: 24px;
+}
+.article-box__heading {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .article-box__heading {
+    font-size: 1.125rem;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article-box__text {
+    margin-bottom: 24px;
+  }
+}
+.article-box__img {
+  flex: 0 0 auto;
+}
+.article-box + .article-box {
+  border-top: 2px solid rgba(58, 83, 155, 0.5);
+}
+.article-box:first-of-type {
+  border-top: 2px solid rgba(58, 83, 155, 0.5);
+}
+.article-box:last-of-type {
+  border-bottom: 2px solid rgba(58, 83, 155, 0.5);
+}
+
+.cta-box {
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+.cta-box__text {
+  text-align: center;
+}
+.cta-box__button-wrap {
+  display: flex;
+  justify-content: center;
+}
+.cta-box__button {
+  width: 474px;
+  margin: 22px auto 0;
+  padding: 14px;
+  display: block;
+  text-align: center;
+  border: 2px solid #3a539b;
+  background-color: #3a539b;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+.cta-box__button:hover {
+  background-color: #fff;
+  color: #3a539b;
+}
+
 .table {
   table-layout: fixed;
   width: 100%;
@@ -1222,4 +1405,33 @@ select {
   border-color: #fff #fff transparent transparent;
   border-radius: 2px;
   transform: translate(-50%, 0) rotate(-45deg);
+}
+
+.symbol-list__item {
+  display: flex;
+}
+.symbol-list__symbol {
+  flex-shrink: 0;
+}
+.symbol-list__text {
+  margin-left: 0.5em;
+}
+.symbol-list--caution {
+  font-size: 0.875rem;
+}
+
+.disc-list__item {
+  position: relative;
+  padding-left: 1em;
+}
+.disc-list__item::before {
+  content: "";
+  position: absolute;
+  top: 1em;
+  left: 0;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  background: #34495e;
+  margin-top: -4px;
 }
