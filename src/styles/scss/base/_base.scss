@@ -28,4 +28,7 @@ textarea,
 select {
   -webkit-appearance: none;
   appearance: none;
+  &:focus {
+    outline-offset: 4px;
+  }
 }

@@ -14,6 +14,7 @@
 @use "utilities/margins";
 @use "utilities/paddings";
 @use "utilities/width";
+@use "utilities/texts";
 
 // components
 @use "components/text";
@@ -25,3 +26,4 @@
 @use "components/table";
 @use "components/link";
 @use "components/list";
+@use "components/form";

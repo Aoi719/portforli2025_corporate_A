@@ -52,6 +52,7 @@
     transition:
       background-color 0.3s,
       color 0.3s;
+    outline-offset: 4px;
     &:hover {
       background-color: $text-color-white;
       color: $accent-color;
@@ -139,6 +140,7 @@
     transition:
       background-color 0.3s,
       color 0.3s;
+    outline-offset: 4px;
     &:hover {
       background-color: $text-color-white;
       color: $accent-color;
@@ -236,9 +238,20 @@
     transition:
       background-color 0.3s,
       color 0.3s;
+    outline-offset: 4px;
     &:hover {
       background-color: $text-color-white;
       color: $main-color-02;
     }
+  }
+}
+.caution-box {
+  border: 2px solid $caution-color;
+  padding: 32px;
+  font-size: fz(18);
+  font-weight: bold;
+  &__text {
+    text-align: center;
+    color: $caution-color;
   }
 }

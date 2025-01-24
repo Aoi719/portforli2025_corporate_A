@@ -70,4 +70,17 @@ $(function () {
       $("#to-top").removeClass("is-fixed");
     }
   });
+
+  // フォーム　ポリシー同意でボタン活性
+  let agreeCheck = $("#policy-agree");
+  let submitButton = $("#submit-button");
+  agreeCheck.on("change", function () {
+    const $this = $(this);
+    if ($this.prop("checked") == true) {
+      // console.log("checked");
+      submitButton.prop("disabled", false);
+    } else {
+      submitButton.prop("disabled", true);
+    }
+  });
 });
