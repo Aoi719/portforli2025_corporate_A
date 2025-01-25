@@ -10,11 +10,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mq() {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
   &__label {
-    min-width: 130px;
+    font-size: fz(18);
+    @include mqup() {
+      min-width: 130px;
+    }
   }
   &__required {
     width: 70px;
+    @include mq() {
+      margin-left: 16px;
+    }
   }
   &__required-tag {
     display: inline-block;
@@ -26,6 +36,10 @@
   }
   &__input {
     width: 64.5%;
+    @include mq() {
+      width: 100%;
+      margin-top: 16px;
+    }
     input:not([type="radio"]):not([type="checkbox"]),
     select,
     textarea {

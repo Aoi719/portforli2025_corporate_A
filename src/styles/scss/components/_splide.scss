@@ -1,3 +1,5 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
 @use "../mixins/breakpoints" as *;
 
 .splide {
@@ -21,7 +23,7 @@
   &__slide {
   }
   &__progress__bar {
-    background-color: lightblue;
+    background-color: $main-color-02;
   }
 
   &__toggle {

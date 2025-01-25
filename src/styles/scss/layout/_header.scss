@@ -16,7 +16,7 @@
   }
   &__logo {
     flex-shrink: 0;
-    @include mq() {
+    @include mq(lg) {
       width: 150px;
     }
     a {
@@ -28,8 +28,9 @@
     }
   }
   &__hamburger {
-    @include mqup() {
-      display: none;
+    display: none;
+    @include mq() {
+      display: block;
     }
     &-button {
       width: 32px;
@@ -99,6 +100,7 @@
   &__nav-list-item {
     & + & {
       margin-left: 32px;
+      margin-left: clamp(20px, 2.6vw, 32px);
       @include mq() {
         margin-left: 0;
         margin-top: 16px;

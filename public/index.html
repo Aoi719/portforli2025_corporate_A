@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>コーポレートサイトA</title>
+    <title>Envision Lab</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="コーポレートサイトAのWEBサイトです。（ポートフォリオ用）" />
+    <meta name="description" content="Envision LabのWEBサイトです。（ポートフォリオ用）" />
     <meta name="format-detection" content="telephone=no,email=no,address=no" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="コーポレートサイトA" />
-    <meta property="og:description" content="コーポレートサイトAのWEBサイトです。（ポートフォリオ用）" />
+    <meta property="og:title" content="Envision Lab" />
+    <meta property="og:description" content="Envision LabのWEBサイトです。（ポートフォリオ用）" />
     <meta property="og:url" content="{{ ページURL }}" />
     <meta property="og:image" content="{{ 絶対パス }}/img/ogp.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -27,7 +27,14 @@
     <header class="header">
       <div class="header__inner">
         <h1 class="header__logo">
-          <a href="/"><img src="https://placehold.jp/226x52.png" alt="株式会社〇〇" /></a>
+          <a href="/" aria-label="トップページに戻る">
+            <svg xmlns="http://www.w3.org/2000/svg" width="226" height="52" viewBox="0 0 226 52">
+              <rect width="226" height="52" fill="white" />
+              <circle cx="30" cy="26" r="20" fill="none" stroke="#00856a" stroke-width="4" />
+              <circle cx="30" cy="26" r="12" fill="#3a539b" />
+              <text x="60" y="36" font-family="Barlow Semi Condensed" font-size="24" fill="#34495e">Envision Lab</text>
+            </svg>
+          </a>
         </h1>
         <div class="header__hamburger">
           <button class="header__hamburger-button" aria-expanded="false">
@@ -63,7 +70,7 @@
       <main class="main">
         <section class="mv">
           <div class="mv__inner">
-            <div class="splide" aria-label="○○株式会社">
+            <div class="splide" aria-label="Envision Lab">
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
@@ -101,10 +108,10 @@
         <div class="section">
           <div class="section__inner">
             <p class="lead-text mb-40">
-              <span class="d-ib">株式会社〇〇は、お客様の課題解決をサポートするために、</span><span class="d-ib">高品質なサービスを提供します。</span><span class="d-ib">私たちの専門性とクリエイティビティで、新しい価値を創造します。</span>
+              <span class="d-ib">Envision Labは、お客様の課題解決をサポートするために、</span><span class="d-ib">高品質なサービスを提供します。</span><span class="d-ib">私たちの専門性とクリエイティビティで、新しい価値を創造します。</span>
             </p>
             <div class="img-box">
-              <img src="https://placehold.jp/1200x468.png" alt="" />
+              <img src="/assets/images/index_img01.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -116,7 +123,7 @@
             <div class="article-col">
               <div class="article-col__item">
                 <div class="article-col__img">
-                  <img src="https://placehold.jp/760x500.png" alt="" />
+                  <img src="/assets/images/index_img02-01.jpg" alt="" />
                 </div>
                 <div class="article-col__contents">
                   <h3 class="article-col__heading mh">Webソリューション</h3>
@@ -128,7 +135,7 @@
               </div>
               <div class="article-col__item">
                 <div class="article-col__img">
-                  <img src="https://placehold.jp/760x500.png" alt="" />
+                  <img src="/assets/images/index_img02-02.jpg" alt="" />
                 </div>
                 <div class="article-col__contents">
                   <h3 class="article-col__heading mh">デザインサービス</h3>
@@ -140,7 +147,7 @@
               </div>
               <div class="article-col__item">
                 <div class="article-col__img">
-                  <img src="https://placehold.jp/760x500.png" alt="" />
+                  <img src="/assets/images/index_img02-03.jpg" alt="" />
                 </div>
                 <div class="article-col__contents">
                   <h3 class="article-col__heading mh">コンサルティング</h3>
@@ -166,7 +173,7 @@
                 </colgroup>
                 <tr>
                   <th>社名</th>
-                  <td>株式会社〇〇</td>
+                  <td>Envision Lab</td>
                 </tr>
                 <tr>
                   <th>住所</th>
@@ -187,21 +194,22 @@
                   style="border: 0"
                   allowfullscreen=""
                   loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  referrerpolicy="no-referrer-when-downgrade"
+                  aria-label="Googleマップ"></iframe>
               </div>
             </div>
           </div>
+          <div class="to-top" id="to-top">
+            <a href="#top" class="to-top__link">
+              <span class="to-top__text">TOP</span>
+            </a>
+          </div>
         </section>
       </main>
-      <div class="to-top" id="to-top">
-        <a href="#top" class="to-top__link">
-          <span class="to-top__text">TOP</span>
-        </a>
-      </div>
     </div>
     <footer class="footer">
       <div class="footer__inner">
-        <p class="footer__copy">&copy; ○○株式会社</p>
+        <p class="footer__copy">&copy; Envision Lab</p>
       </div>
     </footer>
 

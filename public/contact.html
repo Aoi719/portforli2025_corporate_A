@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>お問い合わせ | コーポレートサイトA</title>
+    <title>お問い合わせ | Envision Lab</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="コーポレートサイトAのWEBサイトです。（ポートフォリオ用）" />
+    <meta name="description" content="Envision LabのWEBサイトです。（ポートフォリオ用）" />
     <meta name="format-detection" content="telephone=no,email=no,address=no" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="お問い合わせ | コーポレートサイトA" />
-    <meta property="og:description" content="コーポレートサイトAのWEBサイトです。（ポートフォリオ用）" />
+    <meta property="og:title" content="お問い合わせ | Envision Lab" />
+    <meta property="og:description" content="Envision LabのWEBサイトです。（ポートフォリオ用）" />
     <meta property="og:url" content="{{ ページURL }}" />
     <meta property="og:image" content="{{ 絶対パス }}/img/ogp.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -27,7 +27,14 @@
     <header class="header">
       <div class="header__inner">
         <h1 class="header__logo">
-          <a href="/"><img src="https://placehold.jp/226x52.png" alt="株式会社〇〇" /></a>
+          <a href="/" aria-label="トップページに戻る">
+            <svg xmlns="http://www.w3.org/2000/svg" width="226" height="52" viewBox="0 0 226 52">
+              <rect width="226" height="52" fill="white" />
+              <circle cx="30" cy="26" r="20" fill="none" stroke="#00856a" stroke-width="4" />
+              <circle cx="30" cy="26" r="12" fill="#3a539b" />
+              <text x="60" y="36" font-family="Barlow Semi Condensed" font-size="24" fill="#34495e">Envision Lab</text>
+            </svg></a
+          >
         </h1>
         <div class="header__hamburger">
           <button class="header__hamburger-button" aria-expanded="false">
@@ -67,7 +74,7 @@
             <div class="caution-box mb-xxl">
               <p class="caution-box__text">※このフォームは、実際に送信することはできません。</p>
             </div>
-            <p class="mb-xxl ta_c">コーポレートサイトＡのお問い合わせフォームです。</p>
+            <p class="mb-xxl ta_c">Envision Labのお問い合わせフォームです。</p>
             <form action="" method="post" class="form">
               <div class="form-parts form-parts--required">
                 <div class="form-parts__label">
@@ -212,16 +219,16 @@
             </form>
           </div>
         </section>
+        <div class="to-top" id="to-top">
+          <a href="#top" class="to-top__link">
+            <span class="to-top__text">TOP</span>
+          </a>
+        </div>
       </main>
-      <div class="to-top" id="to-top">
-        <a href="#top" class="to-top__link">
-          <span class="to-top__text">TOP</span>
-        </a>
-      </div>
     </div>
     <footer class="footer">
       <div class="footer__inner">
-        <p class="footer__copy">&copy; ○○株式会社</p>
+        <p class="footer__copy">&copy; Envision Lab</p>
       </div>
     </footer>
 

@@ -12,7 +12,7 @@ $(function () {
   });
 
   // SPハンバーガーメニュー
-  let spBp = 576;
+  let spBp = 769;
   let headerNav = $(".header__nav");
   let hMenuBtn = $(".header__hamburger-button");
   let isMenuOpen = false;
@@ -28,7 +28,8 @@ $(function () {
     }
   });
   $(window).on("resize", function () {
-    if ($(window).width() >= spBp) {
+    console.log($(window).outerWidth());
+    if ($(window).outerWidth() >= spBp) {
       headerNav.show();
     } else {
       if (isMenuOpen) {
