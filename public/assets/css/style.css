@@ -936,11 +936,11 @@ select:focus {
     margin-top: 64px;
   }
 }
-.section:last-child {
+.section:last-of-type {
   padding-bottom: 170px;
 }
 @media screen and (max-width: 768px) {
-  .section:last-child {
+  .section:last-of-type {
     padding-bottom: 100px;
   }
 }

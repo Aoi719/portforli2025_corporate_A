@@ -21,7 +21,7 @@
       margin-top: 64px;
     }
   }
-  &:last-child {
+  &:last-of-type {
     padding-bottom: 170px;
     @include mq() {
       padding-bottom: 100px;
