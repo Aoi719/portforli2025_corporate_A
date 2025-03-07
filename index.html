@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envision Lab</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Envision LabのWEBサイトです。（ポートフォリオ用）" />
+    <meta name="format-detection" content="telephone=no,email=no,address=no" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Envision Lab" />
+    <meta property="og:description" content="Envision LabのWEBサイトです。（ポートフォリオ用）" />
+    <meta property="og:url" content="{{ ページURL }}" />
+    <meta property="og:image" content="{{ 絶対パス }}/img/ogp.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@{{ twitter id }}" />
+    <meta name="twitter:creator" content="@{{ twitter id }}" />
+    <!-- アイコン関係 -->
+    <link rel="icon" type="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="{size}" href="/img/common/apple-touch-icon.png" />
+    <link rel="canonical" href="{{ url }}" />
+    <!-- リソース -->
+    <link rel="stylesheet" href="/assets/css/splide.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body id="top">
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="/" aria-label="トップページに戻る">
+            <svg xmlns="http://www.w3.org/2000/svg" width="226" height="52" viewBox="0 0 226 52">
+              <rect width="226" height="52" fill="white" />
+              <circle cx="30" cy="26" r="20" fill="none" stroke="#00856a" stroke-width="4" />
+              <circle cx="30" cy="26" r="12" fill="#3a539b" />
+              <text x="60" y="36" font-family="Barlow Semi Condensed" font-size="24" fill="#34495e">Envision Lab</text>
+            </svg>
+          </a>
+        </h1>
+        <div class="header__hamburger">
+          <button class="header__hamburger-button" aria-expanded="false">
+            <span class="header__hamburger-bar-wrap">
+              <span class="header__hamburger-bar"></span>
+              <span class="header__hamburger-bar"></span>
+              <span class="header__hamburger-bar"></span>
+              <span class="sr-only">メニュー開閉</span>
+            </span>
+          </button>
+        </div>
+        <nav class="header__nav">
+          <div class="header__nav-inner">
+            <ul class="header__nav-list">
+              <li class="header__nav-list-item">
+                <a href="/web-solution.html">Webソリューション</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="/design-service.html">デザインサービス</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="/consulting.html">コンサルティング</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="/contact.html">お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="page-body-wrapper">
+      <main class="main">
+        <section class="mv">
+          <div class="mv__inner">
+            <div class="splide" aria-label="Envision Lab">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="/assets/images/mv_img01_pc.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/assets/images/mv_img02_pc.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/assets/images/mv_img03_pc.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/assets/images/mv_img04_pc.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/assets/images/mv_img05_pc.jpg" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <div class="splide__progress">
+                <div class="splide__progress__bar"></div>
+              </div>
+              <button class="splide__toggle" type="button">
+                <span class="splide__toggle__play">
+                  <img src="/assets/images/icons/button_play.svg" alt="" />
+                </span>
+                <span class="splide__toggle__pause">
+                  <img src="/assets/images/icons/button_stop.svg" alt="" />
+                </span>
+              </button>
+            </div>
+            <p class="mv__copy">Webで未来を形にする、<br />確かな技術と情熱</p>
+          </div>
+        </section>
+        <div class="section">
+          <div class="section__inner">
+            <p class="lead-text mb-40">
+              <span class="d-ib">Envision Labは、お客様の課題解決をサポートするために、</span><span class="d-ib">高品質なサービスを提供します。</span><span class="d-ib">私たちの専門性とクリエイティビティで、新しい価値を創造します。</span>
+            </p>
+            <div class="img-box">
+              <img src="/assets/images/index_img01.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <section class="section bg-color">
+          <div class="section__inner">
+            <h2 class="primary-heading">
+              <span class="primary-heading__text">わたしたちにできること</span>
+            </h2>
+            <div class="article-col">
+              <div class="article-col__item">
+                <div class="article-col__img">
+                  <img src="/assets/images/index_img02-01.jpg" alt="" />
+                </div>
+                <div class="article-col__contents">
+                  <h3 class="article-col__heading mh">Webソリューション</h3>
+                  <p class="article-col__text">企業の成長を支えるウェブサイト制作やシステム開発を提供しています。</p>
+                  <div class="article-col__button-wrapper">
+                    <a href="/web-solution.html" class="article-col__button">詳しくはこちら</a>
+                  </div>
+                </div>
+              </div>
+              <div class="article-col__item">
+                <div class="article-col__img">
+                  <img src="/assets/images/index_img02-02.jpg" alt="" />
+                </div>
+                <div class="article-col__contents">
+                  <h3 class="article-col__heading mh">デザインサービス</h3>
+                  <p class="article-col__text">視覚的に魅力的で機能的なデザインを通じて、ブランド価値を高めます。</p>
+                  <div class="article-col__button-wrapper">
+                    <a href="/design-service.html" class="article-col__button">詳しくはこちら</a>
+                  </div>
+                </div>
+              </div>
+              <div class="article-col__item">
+                <div class="article-col__img">
+                  <img src="/assets/images/index_img02-03.jpg" alt="" />
+                </div>
+                <div class="article-col__contents">
+                  <h3 class="article-col__heading mh">コンサルティング</h3>
+                  <p class="article-col__text">ビジネスプロセスの最適化や戦略的支援で、次の一歩をサポートします。</p>
+                  <div class="article-col__button-wrapper">
+                    <a href="/consulting.html" class="article-col__button">詳しくはこちら</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section__inner">
+            <h2 class="primary-heading">
+              <span class="primary-heading__text">アクセス</span>
+            </h2>
+            <div class="table-wrap">
+              <table class="table">
+                <colgroup>
+                  <col class="w-30" />
+                  <col class="w-70" />
+                </colgroup>
+                <tr>
+                  <th>社名</th>
+                  <td>Envision Lab</td>
+                </tr>
+                <tr>
+                  <th>住所</th>
+                  <td>北海道札幌市中央区○○条○丁目</td>
+                </tr>
+                <tr>
+                  <th>電話番号</th>
+                  <td>011-000-0000</td>
+                </tr>
+                <tr>
+                  <th>Eメール</th>
+                  <td>aaaaa@example.com</td>
+                </tr>
+              </table>
+              <div class="map-box mt-30">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.7055236229776!2d141.34599169678958!3d43.0686606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2974d2c3f903%3A0xa5e2b18cdd4a47a5!2z5pyt5bmM6aeF!5e0!3m2!1sja!2sjp!4v1737203227380!5m2!1sja!2sjp"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  aria-label="Googleマップ"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="to-top" id="to-top">
+            <a href="#top" class="to-top__link">
+              <span class="to-top__text">TOP</span>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__copy">&copy; Envision Lab</p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/splide.min.js"></script>
+    <script src="/assets/js/jquery.matchHeight-min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

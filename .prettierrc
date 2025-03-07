@@ -1,0 +1,8 @@
+{
+  "htmlSelfClosing": "never",
+  "bracketSameLine": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "insertFinalNewline": true,
+  "printWidth": 250
+}
