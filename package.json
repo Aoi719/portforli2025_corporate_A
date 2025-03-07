@@ -10,7 +10,8 @@
     "dev": "npm run dev:sass",
     "dev:sass": "sass ./src/styles/scss/style.scss:./public/assets/css/style.css --no-source-map -w",
     "server": "browser-sync start --config bs-config.js",
-    "start": "npm-run-all --parallel dev server"
+    "start": "npm-run-all --parallel dev server",
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "autoprefixer": "^10.4.4",
@@ -25,6 +26,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "browser-sync": "^3.0.3",
+    "gh-pages": "^6.3.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.4.2"
   }
