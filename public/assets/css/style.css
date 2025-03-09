@@ -1355,14 +1355,14 @@ select:focus {
 }
 
 .caution-box {
-  border: 2px solid #d64541;
+  border: 2px solid #d03f3b;
   padding: 32px;
   font-size: 1.125rem;
   font-weight: bold;
 }
 .caution-box__text {
   text-align: center;
-  color: #d64541;
+  color: #d03f3b;
 }
 
 .table {
@@ -1512,7 +1512,7 @@ select:focus {
   text-align: center;
   font-size: 0.875rem;
   color: #fff;
-  background-color: #d64541;
+  background-color: #d03f3b;
 }
 .form-parts__input {
   width: 64.5%;
